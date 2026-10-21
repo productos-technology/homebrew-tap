@@ -5,21 +5,21 @@
 class ProductosAgent < Formula
   desc "Runs ProductOS change definitions in your own checkouts with Claude Code or Codex"
   homepage "https://productos.technology"
-  version "0.2.2"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/productos-technology/productos-agent/releases/download/v0.2.2/productos-agent_0.2.2_darwin_amd64.tar.gz"
-      sha256 "c0c979edde5a79473c95caca8c0691e94bef9707cf44c474729978cfc1b7fa1d"
+      url "https://github.com/productos-technology/productos-agent/releases/download/v0.3.0/productos-agent_0.3.0_darwin_amd64.tar.gz"
+      sha256 "533e0c7b32b6524e2c6c89959486304ad3b978754daf5201527e81775ecbcbd4"
 
       define_method(:install) do
         bin.install "productos-agent"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/productos-technology/productos-agent/releases/download/v0.2.2/productos-agent_0.2.2_darwin_arm64.tar.gz"
-      sha256 "f6042aac6b59f9e506b9cc933b8155f4003df4ea2899429ea0007cd8c71289e2"
+      url "https://github.com/productos-technology/productos-agent/releases/download/v0.3.0/productos-agent_0.3.0_darwin_arm64.tar.gz"
+      sha256 "09afc0802c585655dea57c2e71305e72402e7378230a1d766ff96af6c6865aee"
 
       define_method(:install) do
         bin.install "productos-agent"
@@ -29,15 +29,15 @@ class ProductosAgent < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/productos-technology/productos-agent/releases/download/v0.2.2/productos-agent_0.2.2_linux_amd64.tar.gz"
-      sha256 "c58d5033516a9b7197daadff3d7ece4ce673e7a3735bc7cbcfb7d6190320aef7"
+      url "https://github.com/productos-technology/productos-agent/releases/download/v0.3.0/productos-agent_0.3.0_linux_amd64.tar.gz"
+      sha256 "1b2815bff9299371dbff2a4ef1b89c13943fc4be0e5398dd7f75d7c28db8c65d"
       define_method(:install) do
         bin.install "productos-agent"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/productos-technology/productos-agent/releases/download/v0.2.2/productos-agent_0.2.2_linux_arm64.tar.gz"
-      sha256 "23cb5b0c674bd2f65df1d946a7de0e5bc8018d34c9b44ad31fc77407a54cef20"
+      url "https://github.com/productos-technology/productos-agent/releases/download/v0.3.0/productos-agent_0.3.0_linux_arm64.tar.gz"
+      sha256 "7a0ab3429dd77b74e939951b67aacf493eae53d9ad4a282d19855bcc587dd0d3"
       define_method(:install) do
         bin.install "productos-agent"
       end
